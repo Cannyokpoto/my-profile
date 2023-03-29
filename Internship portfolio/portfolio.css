@@ -1,0 +1,671 @@
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins&family=Roboto:wght@300;400&family=Work+Sans:wght@200&display=swap');
+
+:root{
+    --green: #70a107;
+    --black: #014035;
+    --light-color: #666;
+    --orange: #ffa500;
+    --box-shadow: 0 2px 3px var(--black);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+
+html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1{
+    color: white;
+    font-weight: 900;
+}
+
+.hero h1 span{
+    color: var(--green);
+}
+
+.hero h3{
+    color: white;
+    margin-top: px;
+}
+
+
+.container .about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .about h3{
+    color: var(--green);
+}
+
+.container .about hr{
+    width: 75%;
+    height: 2px;
+    background-color: var(--green);
+    opacity: .4;
+}
+
+.container .about .pnt{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.container .about .pnt p{
+    width: 40%;
+    color: white;
+    text-transform: none;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.container .about .pnt img{
+    width: 35%;
+    border-radius: 20px;
+}
+
+.swiper-pagination{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dot{
+    background-color: #bbb;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active{
+    background: var(--green);
+}
+
+
+.container .skills{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 450px;
+}
+
+.container .skills p{
+    color: white;
+    margin-top: 20px;
+}
+
+.container .skills h3{
+    color: var(--green);
+}
+
+.container .skills hr{
+    width: 75%;
+    height: 2px;
+    background-color: var(--green);
+    opacity: .4;
+}
+
+.container .skills .logos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.container .skills .logos .logo{
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .skills .logos .logo img{
+    width: 100%;
+}
+
+.container .skills .logos .logo h3{
+    color: white;
+    font-size: 15px;
+}
+
+
+.container .projects{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 400px;
+}
+
+.container .projects h3{
+    color: var(--green);
+}
+
+.container .projects hr{
+    width: 75%;
+    height: 2px;
+    background-color: var(--green);
+    opacity: .4;
+}
+
+.container .projects .myprojects{
+    width: 60%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.container .projects .myprojects div{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.container .projects .myprojects div a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: grey;
+    border: solid var(--black) 2px;
+    width: 20%;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.container .projects .myprojects div a:hover{
+    box-shadow: 5px 5px 7px 0px var(--black);
+    position: relative;
+    top: -3px;
+}
+
+.container .projects .myprojects div a h2{
+    font-size: 30px;
+}
+
+.container .projects .myprojects div a i{
+    font-size: 25px;
+    align-self: flex-end;
+    padding-right: 30px;
+}
+
+
+
+.container .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 350px;
+}
+
+.message{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.container .contact h3{
+    color: var(--green);
+}
+
+.container .contact hr{
+    width: 75%;
+    height: 2px;
+    background-color: var(--green);
+    opacity: .4;
+}
+
+.container .contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 57%;
+}
+
+.container .contact form label{
+    color: white;
+    position: relative;
+    top: 30px;
+    width: 60%;
+}
+
+
+.container .contact form input{
+    margin-top: 30px;
+    height: 50px;
+    width: 60%;
+    border-radius: 6px;
+    background-color: transparent;
+    color: white;
+    border: 1px var(--black) solid;
+}
+
+.container .contact form textarea{
+    margin-top: 50px;
+    margin-right: 120px;
+    border-radius: 5px;
+}
+
+.container .contact form input::placeholder{
+    padding-left: 30px;
+    opacity: .6;
+}
+
+.container .contact form button{
+    width: 25%;
+    height: 50px;
+    background-color: var(--green);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 250px;
+}
+
+.container .contact .reach-me{
+    display: flex;
+    flex-direction: column;
+    width: 37%;
+    margin-top: 50px;
+}
+
+.container .contact .reach-me p{
+    color: white;
+    text-transform: none;
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+    width: 100%;
+    font-weight: 900;
+}
+
+footer h1{
+    color: white;
+}
+
+.socials{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.socials a{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    height: 70%;
+    border-radius: 10px;
+}
+
+.socials a i{
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.black{
+    color: black;
+    background-color: white;
+}
+
+.s-blue{
+    background-color: rgb(17, 181, 202);
+    color: white;
+}
+
+.blue{
+    background-color: rgb(0, 89, 255);
+    color: white;
+}
+
+
+.purple{
+    background: rgba(209, 19, 152, 0.699);
+    color: white;
+}
+
+.blue-n-w{
+    background-color: blue;
+    color: white;
+}
+.green{
+    color: white;
+    background-color: #065a4c;
+}
+
+footer p{
+    color: white;
+    margin-top: 250px;
+    padding-bottom: 50px;
+}
+
+footer p a{
+    color: var(--green);
+}
+
+@media (max-width:750px){
+
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+
+    .container .hero{
+        width: 100%;
+    }
+
+    .container .hero h1{
+        width: 100%;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .hero h3{
+        margin-top: 15px;
+    }
+
+    .container .hero .cta{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container .hero .cta a{
+        font-size: 17px;
+        width: 30%;
+    }
+
+    .container .about{
+        width: 100%;
+    }
+
+    .container .about .pnt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container .about .pnt p{
+        font-size: 17px;
+        line-height: 1.9;
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .container .about .pnt img{
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .container .skills .logos{
+        padding: 0 20px;
+    }
+
+    .container .skills p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .container .skills .logos .logo{
+        width: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .container .skills .logos .logo img{
+        width: 100%;
+    }
+    
+    .container .skills .logos .logo h3{
+        color: white;
+        font-size: 10px;
+    }
+
+    .container .projects{
+        width: 100%;
+    }
+
+    .container .projects .myprojects{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    
+    .container .projects .myprojects a{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: grey;
+        border: solid var(--black) 2px;
+        width: 40%;
+        height: 190px;
+        cursor: pointer;
+        margin-top: 30px;
+        border-radius: 15px;
+    }
+
+    .container .projects .myprojects a p{
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+
+
+    .container .contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 350px;
+    }
+    
+    .message{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        align-items: center;
+    }
+    
+    
+    .container .contact form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .container .contact form label{
+        color: white;
+        position: relative;
+        top: 30px;
+        width: 60%;
+        font-size: 15px;
+    }
+    
+    
+    .container .contact form input{
+        margin-top: 30px;
+        height: 50px;
+        width: 60%;
+        border-radius: 6px;
+        background-color: transparent;
+        color: white;
+        border: 1px var(--black) solid;
+    }
+    
+    .container .contact form textarea{
+        margin-top: 50px;
+        margin-left: 120px;
+        border-radius: 5px;
+        width: 60%;
+    }
+    
+    .container .contact form input::placeholder{
+        font-size: 15px;
+        opacity: .6;
+    }
+    
+    .container .contact form button{
+        width: 30%;
+        height: 50px;
+        background-color: var(--green);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        padding: 0 5px;
+        font-size: 15px;
+        cursor: pointer;
+        margin-top: 20px;
+        margin-left: 140px;
+    }
+
+    .container .contact .reach-me{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 50px;
+    }
+
+    .container .contact .reach-me p{
+        font-size: 15px;
+    }
+
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 250px;
+        width: 100%;
+    }
+    
+    footer h1{
+        color: white;
+        font-weight: 900;
+    }
+    
+    .socials{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+    }
+    
+    .socials a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        height: 50%;
+    }
+    
+    .socials a i{
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+    }
+    
+
+    footer p{
+        font-size: 15px;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+    }
+}
